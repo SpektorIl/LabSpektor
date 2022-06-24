@@ -37,17 +37,19 @@ functions:
 	matrix& fromfilebin(const char* fileName);//binary reading
  
  any stream reading/writing are also implemented
- ostream& operator<< (ostream& out, const matrix mtx0);
-	ofstream& operator<< (ofstream& out, const matrix mtx0);
-	ifstream& operator>> (ifstream& in, matrix& mtx0);
+ ostream& operator<< (ostream& out, const matrix mtx0);//
+	ofstream& operator<< (ofstream& out, const matrix mtx0);//
+	ifstream& operator>> (ifstream& in, matrix& mtx0);//
  
- regular txt files reading/writing
+ regular txt files reading/writing:
+	
  void tofiletxt(matrix a, const char* fileName);//writing to
  matrix fromfiletxt(const char* fileName);//reading from
  
 2.PCA Functions
  Implemented a functional class for PCA methods
  methods:
+	
  matrix centering(matrix m);//centering
 matrix norm(matrix m);//updated norm function
 	matrix scaling(matrix m);//all purpose scaling scaling
